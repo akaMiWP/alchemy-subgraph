@@ -1,0 +1,26 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: VendingMachineV2
+    network: sepolia
+    source:
+      address: "0xD720107bc2dCe4B02560AEe38d4447d60F4951B9"
+      abi: VendingMachineV2
+      startBlock: 6376940
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Initialized
+      abis:
+        - name: VendingMachineV2
+          file: ./abis/VendingMachineV2.json
+      eventHandlers:
+        - event: Initialized(uint64)
+          handler: handleInitialized
+      file: ./src/vending-machine-v-2.ts

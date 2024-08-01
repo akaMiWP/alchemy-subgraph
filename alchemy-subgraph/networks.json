@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "VendingMachineV2": {
+      "address": "0xD720107bc2dCe4B02560AEe38d4447d60F4951B9",
+      "startBlock": 6376940
+    }
+  }
+}
