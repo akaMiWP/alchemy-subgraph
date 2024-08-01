@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@graphprotocol/graph-cli": "^0.79.2"
+    "@graphprotocol/graph-cli": "0.73.0"
   }
 }
